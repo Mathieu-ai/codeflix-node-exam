@@ -6,8 +6,8 @@ if (process.argv.length==4) {
     console.log('File was copied to destination');
   }); 
 } else if (process.argv.length==4 && process.argv[2]==='-r' ) {
-  fs.copyFile( process.argv[3], process.argv[4], fs.constants.COPYFILE_EXC,function (err, data) {
-      if (err) throw err;
-      console.log(data)
-  }
+  fs.copyFile( process.argv[3], process.argv[4], fs.constants.COPYFILE_EXC, function(err, data) {
+    if (err) throw err;
+    console.log(data);
+  });
 }
